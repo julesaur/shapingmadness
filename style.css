@@ -1,5 +1,4 @@
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
 
 /* Global */
 html {
@@ -11,7 +10,7 @@ body {
       height: calc(100vh - 8em);
       padding: 4em;
       color: rgba(255, 255, 255, 0.75);
-      font-family: 'Anonymous Pro', monospace;
+      font-family: 'Poller One', cursive;
       background-color: rgb(25, 25, 25);
 }
 
