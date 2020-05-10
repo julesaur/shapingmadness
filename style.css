@@ -14,7 +14,7 @@ body {
       background-image: url("shapeground.jpg");
       background-position: center; /* Center the image */
       background-attachment: fixed;
-      background-size: cover;
+      background-size: 300px 100px;
 }
 
 .line {
@@ -32,7 +32,7 @@ body {
 /*Animation*/
 
 .anim-typewriter {
-      animation: typewriter 4s steps(40) 1s 1 normal both,
+      animation: typewriter 3s steps(40) 1s 1 normal both,
       blinkTextCursor 500ms steps(40) infinite normal;
 }
 
@@ -41,7 +41,7 @@ body {
             width: 0;
       }
       to {
-            width: 16em;
+            width: 14em;
       }
 }
 
@@ -52,4 +52,9 @@ body {
       to {
             border-right-color: transparent;
       }
+
+
+
+
+
 }
