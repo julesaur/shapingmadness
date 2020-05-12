@@ -10,6 +10,7 @@
 </head>
 
 <style>
+  /*nackground*/
 body{ background-image: url("shapeground.jpg");
       background-position: center; /* Center the image */
       background-attachment: fixed;
@@ -17,6 +18,7 @@ body{ background-image: url("shapeground.jpg");
       
     }
 
+/*one lvl game*/
     div {
     text-align: center;
     width: 100%;
@@ -24,6 +26,7 @@ body{ background-image: url("shapeground.jpg");
     height: 100%;
     display: table-cell;
 }
+
 .iframe{
   width: 200px;
 }
@@ -51,18 +54,54 @@ body{
   -webkit-transform: rotate(-45deg);
 }
 
+/*hidden buttton*/
 
+
+
+.button {
+  background-color: #fa6e79;
+  border: none;
+  color: white;
+  padding: 5px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
 </style>
+<!---button---->
 <body>
+<button class="button" onclick="myFunction()" >See code</button>
+<div id="myDIV">
+
+  <iframe src="lvlone.js" height="400"width="400"></iframe>
+</div>
 
 
+<!---game---->
 <div>
+
 
 <iframe src="https://editor.p5js.org/julesaur/embed/q8bC6nKC7" height="620"width="600"></iframe>
 <a href="twolvl.html">
  <i class="arrow right"></i>
  </a>
 </div>
+
+<!---javascript--->
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
   </body>
   </html>

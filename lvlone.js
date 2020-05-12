@@ -6,10 +6,8 @@ var gameState= "L1";
 var y = 300;
 var d = 70;
 
-function preload() {
-  
-    img1 = loadImage('https://julesaur.github.io/dabvictory.gif');
-}
+
+
 function setup() {
   createCanvas(600, 550);
   textAlign(CENTER);
