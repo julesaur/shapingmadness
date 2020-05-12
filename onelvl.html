@@ -20,6 +20,7 @@ body{ background-image: url("shapeground.jpg");
 
 /*one lvl game*/
     div {
+
     text-align: center;
     width: 100%;
     vertical-align: middle;
@@ -28,15 +29,18 @@ body{ background-image: url("shapeground.jpg");
 }
 
 .iframe{
+
   width: 200px;
 }
 div,
 body,
 html {
+
     height: 100%;
     width: 100%;
 }
 body{
+
     display: table;
     height:100%;
     width: 100%;
@@ -59,31 +63,48 @@ body{
 
 
 .button {
+
   background-color: #fa6e79;
   border: none;
   color: white;
-  padding: 5px 35px;
-  text-align: center;
+  padding: 15px 35px;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 4px 20px;
   cursor: pointer;
 }
 
+#myDIV {
+
+  display: inline-block;
+
+  }
+/*restart button*/
+.secondbutton {
+
+  background-color: #24a0ed;
+  border: none;
+  color: white;
+  padding: 15px 35px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 20px;
+  cursor: pointer;
+}
+
+
+
 </style>
-<!---button---->
+
+
 <body>
-<button class="button" onclick="myFunction()" >See code</button>
-<div id="myDIV">
-
-  <iframe src="lvlone.js" height="400"width="400"></iframe>
-</div>
-
 
 <!---game---->
 <div>
-
+  <button class="secondbutton" onClick="window.location.reload();">Restart Level</button>
+  <button class="button" onclick="myFunction()" >Hide Code</button>
 
 <iframe src="https://editor.p5js.org/julesaur/embed/q8bC6nKC7" height="620"width="600"></iframe>
 <a href="twolvl.html">
@@ -91,6 +112,14 @@ body{
  </a>
 </div>
 
+
+<!---button---->
+
+<div id="myDIV">
+
+<iframe src="lvlone.js" height="400"width="400"></iframe>
+
+</div>
 <!---javascript--->
 <script>
 function myFunction() {
