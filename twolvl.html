@@ -10,6 +10,7 @@
 </head>
 
 <style>
+/*nackground*/
 body{ background-image: url("shapeground.jpg");
       background-position: center; /* Center the image */
       background-attachment: fixed;
@@ -17,23 +18,29 @@ body{ background-image: url("shapeground.jpg");
       
     }
 
+/*one lvl game*/
     div {
+
     text-align: center;
     width: 100%;
     vertical-align: middle;
     height: 100%;
     display: table-cell;
 }
+
 .iframe{
+
   width: 200px;
 }
 div,
 body,
 html {
+
     height: 100%;
     width: 100%;
 }
 body{
+
     display: table;
     height:100%;
     width: 100%;
@@ -51,18 +58,81 @@ body{
   -webkit-transform: rotate(-45deg);
 }
 
+/*hidden buttton*/
+
+
+
+.button {
+
+  background-color: #fa6e79;
+  border: none;
+  color: white;
+  padding: 15px 35px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 20px;
+  cursor: pointer;
+}
+
+#myDIV {
+
+  display: inline-block;
+
+  }
+/*restart button*/
+.secondbutton {
+
+  background-color: #24a0ed;
+  border: none;
+  color: white;
+  padding: 15px 35px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 20px;
+  cursor: pointer;
+}
+
+
 
 </style>
 <body>
 
 
 <div>
+<!---buttons--->
 
+  <button class="secondbutton" onClick="window.location.reload();">Restart Level</button>
+  <button class="button" onclick="myFunction()" >Hide Code</button>
+<!---game---->
 <iframe src="https://editor.p5js.org/julesaur/embed/7l_lM3RUh" height="620"width="600"></iframe>
 <a href="threelvl.html">
  <i class="arrow right"></i>
  </a>
 
 </div>
+
+<!---code---->
+
+<div id="myDIV">
+
+<iframe src="lvltwo.js" height="400"width="400"></iframe>
+
+</div>
+<!---javascript--->
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+
+
   </body>
   </html>
