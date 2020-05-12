@@ -97,13 +97,37 @@ body{
 </style>
 <body>
 
-
 <div>
+<!---buttons--->
+
+  <button class="secondbutton" onClick="window.location.reload();">Restart Level</button>
+  <button class="button" onclick="myFunction()" >Hide Code</button>
+<!---game---->
 
 <iframe src="https://editor.p5js.org/julesaur/embed/RVz6Xdgxf" height="620"width="600"></iframe>
 <a href="#">
  <i class="arrow right"></i>
  </a>
 </div>
+<!---code---->
+
+<div id="myDIV">
+
+<iframe src="lvlthree.js" height="400"width="400"></iframe>
+
+</div>
+<!---javascript--->
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+
   </body>
   </html>
