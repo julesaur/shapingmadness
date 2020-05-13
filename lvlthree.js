@@ -52,7 +52,7 @@ function levelThree() {
     ballSize=ballSize -1;
     score= score +1;
   }
-  if(score>15){
+  if(score>14){
 // level 3
    gameState = "L01";
       }
