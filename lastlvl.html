@@ -92,7 +92,18 @@ body{
   margin: 4px 20px;
   cursor: pointer;
 }
+.next {
 
+  background-color: #3AD2AE;
+  border: none;
+  color: white;
+  padding: 15px 35px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 20px;
+  cursor: pointer;
+}
 </style>
 <body>
 
@@ -101,20 +112,22 @@ body{
 
   <button class="secondbutton" onClick="window.location.reload();">Restart Level</button>
   <button class="button" onclick="myFunction()" >Hint</button>
+
+  <a href="index.html">
+ <button class="next"> Next </button> </a>
+
 <!---game---->
 
 <iframe src="https://editor.p5js.org/julesaur/embed/3BZkj-NLh" height="620"width="600"></iframe>
-<a href="index.html">
- <i class="arrow right"></i>
- </a>
 </div>
 <!---code---->
 
 <div id="myDIV">
+  <iframe src="lastlvl.js" height="400"width="400"></iframe>
 
-<p>
+<h2>
   Hover over the Hydroflask icon many times to get to the ending!
-</p>
+</h2>
 
 </div>
 <!---javascript--->
